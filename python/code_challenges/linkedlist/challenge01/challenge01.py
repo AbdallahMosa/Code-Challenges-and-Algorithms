@@ -46,6 +46,9 @@ class LinkedList:
       
     
     def printAll(self):
+        '''
+        this function for print and return new list 
+        '''
         list_of_node=[]
         if self.head is None :
             print("The linked list is empty")
