@@ -1,0 +1,1 @@
+<img alt="" src="../../../assets/linked-list/WhiteBording.png" >
