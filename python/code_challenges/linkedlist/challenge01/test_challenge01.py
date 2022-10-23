@@ -8,7 +8,7 @@ def linkedList1():
     linkedList1.append(5)
     linkedList1.append(1)
     linkedList1.append(9)
-    linkedList1.delete_a_node(5)
+    delete_node(linkedList1.get_node(5))
     x=linkedList1.printAll()
 
     return x
@@ -20,7 +20,7 @@ def linkedList2():
     linkedList2.append(5)
     linkedList2.append(1)
     linkedList2.append(9)
-    linkedList2.delete_a_node(1)
+    delete_node(linkedList2.get_node(1))
     x=linkedList2.printAll()
     return x
 @pytest.fixture
@@ -30,7 +30,7 @@ def linkedList3():
     linkedList3.append(5)
     linkedList3.append(1)
     linkedList3.append(9)
-    linkedList3.delete_a_node(4)
+    delete_node(linkedList3.get_node(4))
     x=linkedList3.printAll()
     return x
 
