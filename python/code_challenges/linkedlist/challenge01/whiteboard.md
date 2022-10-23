@@ -1,1 +1,1 @@
-<img alt="" src="../../../assets/linked-list/WhiteBording.png" >
+<img alt="" src="../../../assets/linked-list/new_LL_CC1.png" >
