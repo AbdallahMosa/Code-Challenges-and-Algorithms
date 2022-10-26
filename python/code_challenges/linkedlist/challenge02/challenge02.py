@@ -11,7 +11,7 @@ class LinkedList:
 
     def append(self, value):
         '''
-        this function to add new node 
+        this method to add new node 
         '''
         node = Node(value)
         if self.head is None:
@@ -29,7 +29,7 @@ class LinkedList:
         return current
     def printAll(self):
         '''
-        this function for print and return new list 
+        this method for print and return new list 
         '''
         list_of_node=[]
         if self.head is None :
@@ -43,15 +43,32 @@ class LinkedList:
                 current = current.next
         print(list_of_node)
         return list_of_node
+    def __str__(self):
+        output=""
+        if self.head is None : 
+          output = "Empty linked list"
+        else :
+         current=self.head
+        while current : 
+            output+=f'{current.value}-->'
+            current=current.next
+        output+= "None"
+        return output
         
 def find_mid_node(head):
-        node_value=[]
-        while head is not None:
-            node_value.append(head.value) 
-            head=head.next
-        return node_value[len(node_value)//2:]
+    '''
+    this function to find and return  the middle node and 
+    '''
+    node=[]
+    while head is not None:
+        node.append(head) 
+        head=head.next
+    return node[len(node)//2]
 
 def delete_node(node):
+    '''
+    this function to delete the node from the linkd list 
+    '''
     nextNode = node.next
     node.value = nextNode.value
     node.next = nextNode.next
@@ -59,12 +76,13 @@ def delete_node(node):
 linkedList1 = LinkedList()
 
 if __name__=="__main__":
+    # -------------- just for my test ------------- 
     linkedList1.append(1)
     linkedList1.append(2)
     linkedList1.append(3)
     linkedList1.append(4)
     linkedList1.append(5)
-    linkedList1.append(6)
+    # linkedList1.append(6)
     # linkedList1.append(6)
 
     # print ("Linked List: ")
@@ -74,5 +92,9 @@ if __name__=="__main__":
     # linkedList1.printAll()
     linkedList1.printAll()
     print("after ==================================")
-    print(find_mid_node(linkedList1.get_node(1)))
+    x=find_mid_node(linkedList1.get_node(1))
+    while x is not None :
+
+        print(x.value)
+        x=x.next
     # linkedList1.printAll()

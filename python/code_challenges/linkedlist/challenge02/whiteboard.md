@@ -1,1 +1,1 @@
-<img alt="" src="LL_find_mid.png" >
+<img alt="" src="final_cc2.png" >
