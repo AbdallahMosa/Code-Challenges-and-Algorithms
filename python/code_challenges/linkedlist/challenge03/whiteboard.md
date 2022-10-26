@@ -1,0 +1,1 @@
+<img alt="" src="LL_CC3.png" >
